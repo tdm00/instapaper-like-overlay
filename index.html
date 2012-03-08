@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The HTML5 Herald</title>
+  <!--[if lt IE 9]>
+  	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <style type="text/css" media="screen">
+    body {
+     background: #ffffff; 
+     margin: auto;
+    }
+    #greeting {
+      font-size: 4em;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 200px;
+      color: #ffffff;
+      width: 100%;
+      height: 100%;
+      background: black; 
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0.9;
+      font-family: monospace, sans-serif;
+    }
+  </style>
+</head>
+<body id="main">
+  <div id="header">
+    <h1 id="welcome_to_my_webpage!">Welcome to My Webpage!</h1>
+  </div>
+  <div id="body">
+    This is the body dude!
+  </div>
+  <div id="footer">
+    Copyright 2012
+  </div>
+  <div id="greeting" style="display:hidden">
+    Ready Player One!
+  </div>
+</body>
+<script>
+  $('#greeting').show().delay(2000).fadeOut(600);
+</script>
+</html>
